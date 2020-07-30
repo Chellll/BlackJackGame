@@ -25,4 +25,5 @@
     <string name="sign_please">Войдите</string>
     <string name="private_term">Создавая аккаунт, я соглашаюсь с политикой пользования MAZITOGAME</string>
     <string name="nav_profile">Профиль</string>
+    <string name="nav_rating">Райтинг</string>
 </resources>

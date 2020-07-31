@@ -1,4 +1,4 @@
-package com.example.blackjackgame.ui.fragment.news.content;
+package com.example.blackjackgame.ui.fragment.rating.content;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,21 +9,19 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-
 import com.example.blackjackgame.R;
-import com.example.blackjackgame.databinding.FragmentNewsContentBinding;
 
-public class NewsContentFragment extends Fragment {
+import com.example.blackjackgame.databinding.FragmentRatingContentBinding;
 
-    FragmentNewsContentBinding binding;
+public class RatingContentFragment extends Fragment {
 
-    private String[] title = {" Турниры ", " Обновления ", " Друзья "};
+    FragmentRatingContentBinding binding;
 
-    public static NewsContentFragment newInstance() {
+    public static RatingContentFragment newInstance() {
 
         Bundle args = new Bundle();
 
-        NewsContentFragment fragment = new NewsContentFragment();
+        RatingContentFragment fragment = new RatingContentFragment();
         fragment.setArguments(args);
         return fragment;
     }
@@ -31,7 +29,7 @@ public class NewsContentFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_news_content,container, false);
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_rating_content,container,false);
 
         return binding.getRoot();
     }
